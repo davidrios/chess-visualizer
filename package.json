@@ -2,14 +2,13 @@
   "name": "chess-visualizer",
   "version": "0.0.1",
   "description": "",
-  "main": "app.js",
   "files": [
     "src"
   ],
   "scripts": {
-    "clean": "rm -rfv dist",
-    "build:umd": "NODE_ENV=development webpack src/index.js dist/app.js",
-    "build:umd:min": "NODE_ENV=production webpack src/index.js dist/app.min.js"
+    "clean": "rm -rfv dist/*.js",
+    "build": "NODE_ENV=development webpack src/index.js",
+    "build:min": "NODE_ENV=production webpack src/index.js"
   },
   "author": "David Rios <david.rios.gomes@gmail.com>",
   "license": "MIT",
